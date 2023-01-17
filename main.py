@@ -19,7 +19,7 @@ async def setup(bot):
 
 async def main():
     # do other async things
-    await setup()
+    await setup(bot)
 
     # start the client
     async with client:
