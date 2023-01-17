@@ -1,3 +1,4 @@
+import asyncio
 import os
 import discord
 
@@ -8,7 +9,12 @@ from helpers import Help
 bot = commands.Bot('!', intents=discord.Intents.default())
 bot.remove_command('help')
 
-bot.add_cog(Help(bot))
-bot.add_cog(Music(bot))
-
 bot.run(os.getenv('TOKEN'))
+
+
+async def main():
+    await bot.add_cog(Help(bot))
+    await bot.add_cog(Music(bot))
+    await bot.start('TOKEN')
+
+asyncio.run(main())
