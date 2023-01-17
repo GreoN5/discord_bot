@@ -9,7 +9,7 @@ from helpers import Help
 bot = commands.Bot('!', intents=discord.Intents.default())
 bot.remove_command('help')
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 
 
 async def setup(bot):
