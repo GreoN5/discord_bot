@@ -1,9 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('stop')
-    .setDescription('Stop the bot completely (exit channel).'),
+  data: new SlashCommandBuilder().setName('stop').setDescription('почваме игра'),
   async execute(interaction) {
     const queue = interaction.client.player.queues.get(interaction.guildId);
 

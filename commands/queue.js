@@ -2,9 +2,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('queue')
-    .setDescription('Show first 10 songs of the current queue'),
+  data: new SlashCommandBuilder().setName('queue').setDescription('топ 10 цици'),
   async execute(interaction) {
     const queue = interaction.client.player.queues.get(interaction.guildId);
 

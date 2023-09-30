@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  data: new SlashCommandBuilder().setName('pause').setDescription('Pauses the current song'),
+  data: new SlashCommandBuilder().setName('pause').setDescription('отивам да пуша'),
   async execute(interaction) {
     const queue = interaction.client.player.queues.get(interaction.guildId);
 
