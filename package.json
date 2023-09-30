@@ -4,7 +4,8 @@
   "description": "A simple discord bot for a group of friend's server",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "discord",
